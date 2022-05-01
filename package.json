@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/iter-last",
-  "version": "0.0.0",
+  "version": "0.0.7",
   "description": "Consume an entire iterator and return the last iterated value.",
   "license": "Apache-2.0",
   "author": {

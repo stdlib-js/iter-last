@@ -147,8 +147,8 @@ console.log( bool );
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/iter/first`][@stdlib/iter/first]</span><span class="delimiter">: </span><span class="description">return the first iterated value.</span>
--   <span class="package-name">[`@stdlib/iter/nth`][@stdlib/iter/nth]</span><span class="delimiter">: </span><span class="description">return the nth iterated value.</span>
+-   <span class="package-name">[`@stdlib/iter-first`][@stdlib/iter/first]</span><span class="delimiter">: </span><span class="description">return the first iterated value.</span>
+-   <span class="package-name">[`@stdlib/iter-nth`][@stdlib/iter/nth]</span><span class="delimiter">: </span><span class="description">return the nth iterated value.</span>
 
 </section>
 

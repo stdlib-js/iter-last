@@ -1,7 +1,7 @@
-/**
+/*
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2019 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,28 +16,29 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 2.0
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
+
+import { Iterator } from '@stdlib/types/iter';
 
 /**
-* Consume an iterator and return the last iterated value.
+* Consumes an entire iterator and returns the last iterated value.
 *
-* @module @stdlib/iter-last
+* @param iterator - input iterator
+* @returns last iterated value
 *
 * @example
-* var array2iterator = require( '@stdlib/array-to-iterator' );
-* var iterLast = require( '@stdlib/iter-last' );
+* var array2iterator = require( `@stdlib/array/to-iterator` );
 *
 * var it = array2iterator( [ 0, 0, 0, 0, 1 ] );
 *
 * var v = iterLast( it );
 * // returns 1
 */
-
-// MODULES //
-
-var main = require( './main.js' );
+declare function iterLast( iterator: Iterator ): any;
 
 
 // EXPORTS //
 
-module.exports = main;
+export = iterLast;

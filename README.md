@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import iterLast from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-last@esm/index.mjs';
+import iterLast from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-last@v0.1.1-esm/index.mjs';
 ```
 
 #### iterLast( iterator )
@@ -105,7 +105,7 @@ var v = iterLast( iterEmpty() );
 
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-randu@esm/index.mjs';
 import iterMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-map@esm/index.mjs';
-import iterLast from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-last@esm/index.mjs';
+import iterLast from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-last@v0.1.1-esm/index.mjs';
 
 function threshold( r ) {
     return ( r > 0.95 );

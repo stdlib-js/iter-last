@@ -45,32 +45,14 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/iter-last
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
--   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var iterLast = require( '@stdlib/iter-last' );
+import iterLast from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-last@esm/index.mjs';
 ```
 
 #### iterLast( iterator )
@@ -78,7 +60,7 @@ var iterLast = require( '@stdlib/iter-last' );
 Consumes an entire [iterator][mdn-iterator-protocol] and returns the last [iterated][mdn-iterator-protocol] value.
 
 ```javascript
-var array2iterator = require( '@stdlib/array-to-iterator' );
+import array2iterator from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-iterator@esm/index.mjs';
 
 var arr = array2iterator( [ 0, 0, 0, 0, 1 ] );
 
@@ -89,7 +71,7 @@ var v = iterLast( arr );
 If a provided [`iterator`][mdn-iterator-protocol] does not return any [iterated][mdn-iterator-protocol] values, the function returns `undefined`.
 
 ```javascript
-var iterEmpty = require( '@stdlib/iter-empty' );
+import iterEmpty from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-empty@esm/index.mjs';
 
 var v = iterLast( iterEmpty() );
 // returns undefined
@@ -115,10 +97,15 @@ var v = iterLast( iterEmpty() );
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var randu = require( '@stdlib/random-iter-randu' );
-var iterMap = require( '@stdlib/iter-map' );
-var iterLast = require( '@stdlib/iter-last' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="module">
+
+import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-randu@esm/index.mjs';
+import iterMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-map@esm/index.mjs';
+import iterLast from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-last@esm/index.mjs';
 
 function threshold( r ) {
     return ( r > 0.95 );
@@ -138,6 +125,10 @@ var bool = iterLast( miter );
 // returns <boolean>
 
 console.log( bool );
+
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -176,7 +167,7 @@ console.log( bool );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -243,9 +234,9 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/iter/first]: https://github.com/stdlib-js/iter-first
+[@stdlib/iter/first]: https://github.com/stdlib-js/iter-first/tree/esm
 
-[@stdlib/iter/nth]: https://github.com/stdlib-js/iter-nth
+[@stdlib/iter/nth]: https://github.com/stdlib-js/iter-nth/tree/esm
 
 <!-- </related-links> -->
 
